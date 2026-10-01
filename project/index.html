@@ -1,16 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael Trinh – Software Engineer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Michael Trinh – Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="hero">
-  <h1>Michael Trinh</h1>
-  <p class="lead">Software engineer who builds backend systems and clean web apps.</p>
-</header>
+  <div class="wrap">
+    <nav aria-label="Main">
+      <strong>Michael Trinh</strong>
+      <div>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="theme" aria-label="Toggle dark mode">Theme</button>
+      </div>
+    </nav>
 
+    <header class="hero">
+      <h1>Michael Trinh</h1>
+      <p class="lead">
+        Software engineer that can build reliable backend systems and scalable frontend applications.
+        Been building and working on code for 2 years professionally.
+      </p>
+      <div class="btns">
+        <a class="btn main" href="#contact">Contact Me!</a>
+        <a class="btn" href="#experience">See my work history</a>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About me</h2>
+
+      <div class="about">
+        <p>
+          I'm a full-stack engineer with a focus on frontend development but quite flexible on backend development involving api, databases, and server-side logic.
+          I like turning small ideas into vast, well-tested systems, and I enjoy creating impactful software for users and companies alike.
+        </p>
+        <p>
+          I'm looking for a company where I can apply my skills in building robust and scalable features while learning from
+          strong engineers.
+        </p>
+      </div>
+
+      <!-- Key numbers -->
+      <div class="facts">
+        <div><b>2 yrs</b><span>professional experience</span></div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <ol class="log">
+
+        <li>
+          <div class="when">2022 – 2026</div>
+          <h3>B.S. Software Engineering, Concentration in Mobile/Web Development, East Carolina University</h3>
+          <ul>
+            <li>Graduated in May 2026. Focus on how to build frontend applications while gaining a solid understanding of backend development.</li>
+            <li>Relevant coursework: Web Development, Database Systems, Cloud Computing, Software Engineering Principles.</li>
+            <li>Capstone project involved building a full-stack web application with a focus on scalability and maintainability.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+
+    <!-- ========== SKILLS ========== -->
+    <!-- Each skill is a <span> inside a .tags group -->
+    <section id="skills">
+      <h2>Skills</h2>
+
+      <div class="skills">
+        <div>
+          <h3>Languages</h3>
+          <div class="tags">
+            <span>Python</span>
+            <span>JavaScript</span>
+            <span>C++</span>
+            <span>C#</span>
+            <span>TypeScript</span>
+            <span>SQL</span> 
+            <span>Rust</span>
+          </div>
+        </div>
+
+        <div>
+          <h3>Backend &amp; data</h3>
+          <div class="tags">
+            <span>Node.js</span>
+            <span>FastAPI</span>
+            <span>PostgreSQL</span>
+            <span>MongoDB</span>
+            <span>.NET</span>
+          </div>
+        </div>
+
+        <div>
+          <h3>Frontend</h3>
+          <div class="tags">
+            <span>React</span>
+            <span>Next.js</span>
+            <span>HTML &amp; CSS</span>
+            <span>TypeScript</span>
+          </div>
+        </div>
+
+        <div>
+          <h3>Cloud &amp; tooling</h3>
+          <div class="tags">
+            <span>AWS</span>
+            <span>Docker</span>
+            <span>Kubernetes</span>
+            <span>CI/CD</span>
+            <span>Google Cloud</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="proj">
+        <article class="card">
+          <h3>NCEMPT-3</h3>
+          <p>
+            An early math placement for high school students to assess what math courses they are ready for college.
+          </p>
+          <div class="tags">
+            <span>.NET</span>
+            <span>JavaScript</span>
+            <span>Google Cloud</span>
+          </div>
+        </article>
+      </div>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>I'm open to new roles. The fastest way to reach me is email.</p>
+      <div class="btns">
+        <a class="btn main" href="mailto:trinhmi20@students.ecu.edu">trinhmi20@students.ecu.edu</a>
+        <a class="btn" href="https://github.com/Mtrinh123">GitHub</a>
+        <a class="btn" href="https://linkedin.com/in/michael-trinh-079702358/">LinkedIn</a>
+      </div>
+    </section>
+
+    <footer>© Michael Trinh. Built with HTML and CSS.</footer>
+
+  </div>
+  <div class="bar" id="bar" role="toolbar" aria-label="Page editor">
+    <button id="tb-edit">Edit page</button>
+    <input id="tb-url" placeholder="Select a button to edit its link" aria-label="Button link" disabled>
+    <button class="alt" id="tb-dl">Download HTML</button>
+    <button class="alt" id="tb-reset">Reset</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
