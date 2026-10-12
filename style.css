@@ -125,6 +125,16 @@ header.hero {
   padding: 72px 0 64px;
 }
 
+.avatar {
+  display: block;
+  width: 160px;
+  height: 160px;
+  margin-bottom: 28px;
+  border: 3px solid var(--accent);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .hero h1 {
   font-size: clamp(3rem, 10vw, 6.4rem);
   font-weight: 800;
