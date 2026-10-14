@@ -351,6 +351,31 @@ h3 {
   font-size: 14px;
 }
 
+.card h3 small {
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  background: var(--surface-2);
+  color: var(--ink-subtle);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
+
+.card p.links {
+  margin: 16px 0 0;
+  font-weight: 500;
+}
+
+.card p.links a {
+  text-decoration: none;
+}
+
+.card p.links a:hover {
+  text-decoration: underline;
+}
+
 
 /* EDITOR TOOLBAR */
 /* Hidden by default. Show with Ctrl+Shift+E */
