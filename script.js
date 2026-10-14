@@ -23,21 +23,28 @@
     });
   }
 
+  // Edits are saved alongside the HTML they were made on, so an updated page
+  // file replaces stale browser edits instead of being hidden by them.
+  var original = page.innerHTML;
+
   function save() {
     try {
       var copy = page.cloneNode(true);
       stripEditorParts(copy);
-      localStorage.setItem(STORAGE_KEY, copy.innerHTML);
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({ base: original, html: copy.innerHTML }));
     } catch (error) {
     }
   }
 
   try {
-    var saved = localStorage.getItem(STORAGE_KEY);
-    if (saved) {
-      page.innerHTML = saved;
+    var saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+    if (saved && saved.base === original) {
+      page.innerHTML = saved.html;
+    } else {
+      localStorage.removeItem(STORAGE_KEY);
     }
   } catch (error) {
+    try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
   }
 
   function decorate() {
@@ -132,14 +139,6 @@
   });
   document.addEventListener('click', function (event) {
     var target = event.target;
-    if (target.id === 'theme') {
-      var isDark = root.dataset.theme
-        ? root.dataset.theme === 'dark'
-        : matchMedia('(prefers-color-scheme:dark)').matches;
-      root.dataset.theme = isDark ? 'light' : 'dark';
-      return;
-    }
-
     if (!editing) return;
 
     if (target.closest('.btn')) {
