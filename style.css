@@ -376,6 +376,41 @@ h3 {
   text-decoration: underline;
 }
 
+.card p.links a + a {
+  margin-left: 20px;
+}
+
+.card h3 small.live {
+  background: rgb(39 166 68 / 0.15);
+  color: #4cc26a;
+}
+
+/* Project screenshot, links to the live app */
+.card .shot {
+  display: block;
+  margin: 8px 0 16px;
+  border: 1px solid var(--hairline-strong);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card .shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.15s;
+}
+
+.card .shot:hover img {
+  opacity: 0.9;
+}
+
+.card p.note {
+  margin: 8px 0 0;
+  color: var(--ink-subtle);
+  font-size: 13px;
+}
+
 
 /* EDITOR TOOLBAR */
 /* Hidden by default. Show with Ctrl+Shift+E */
