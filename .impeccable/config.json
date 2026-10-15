@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "createdAt": "2026-10-14T21:13:36.513Z",
+        "reason": "Design spec the user supplied (DESIGN (2).md) names Inter as the closest free substitute for Linear's proprietary font"
+      }
+    ]
+  }
+}
