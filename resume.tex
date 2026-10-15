@@ -1,5 +1,4 @@
 \documentclass[letterpaper,11pt]{article}
-
 \usepackage[margin=0.5in]{geometry}
 \usepackage{enumitem}
 \usepackage{titlesec}
@@ -21,7 +20,6 @@
     \textit{#3} & \textit{#4} \\
   \end{tabularx}\vspace{-2pt}}
 
-% \project{Name}{Tech stack}
 \newcommand{\project}[2]{\textbf{#1} $|$ \textit{#2}\vspace{-2pt}}
 
 \begin{document}
@@ -38,22 +36,21 @@
 
 \section{Summary}
 Software Engineering graduate (ECU, 2026) building full-stack web apps with React/Next.js and FastAPI/.NET.
-Helped take a state math placement test online for NC colleges, and built and deployed a job-tracking app
-with CI and a public demo.
+Helped take a state placement test online for NC colleges, and shipped a live job tracker with CI.
 
 \section{Education}
 \entry{East Carolina University}{Aug 2022 -- May 2026}
       {B.S. Software Engineering, Concentration in Mobile/Web Development}{Greenville, NC}
 \begin{itemize}
-  \item Relevant coursework: Web Development, Database Systems, Cloud Computing, Software Engineering Principles 
+  \item Relevant coursework: Web Development, Database Systems, Cloud Computing
 \end{itemize}
 
 \section{Projects}
 \project{NCEMPT-3 -- Early Math Placement Test (Capstone)}{.NET, C\#, JavaScript, Google Cloud}
 \begin{itemize}
   \item Worked on a 5-person team to move NC EMPT (\href{https://ncempt.org}{ncempt.org}), a placement test that has served 859,000+ students, from paper to an online platform used by NC community colleges and UNC universities
-  \item Built the proctor pages and routing that let test administrators manage their students' tests during an exam session
-  \item Built downloadable student and teacher score reports generated after each test, so results can go straight to teachers
+  \item Built proctor pages and routing so test administrators can manage students' tests during an exam
+  \item Built downloadable student and teacher score reports generated after each test
   \item Set up the database for student, test and results data behind the .NET backend on Google Cloud
 \end{itemize}
 \vspace{4pt}
@@ -63,7 +60,7 @@ with CI and a public demo.
   \item Built and deployed a full-stack app (Next.js on Vercel, FastAPI on Render, PostgreSQL on Neon) where users paste a job link to auto-fill the company and role, then drag applications across a pipeline board
   \item Secured accounts with hashed passwords, required email confirmation and a lockout after 5 failed logins, and blocked private network addresses in the link lookup
   \item Built branded HTML confirmation and follow-up reminder emails over SMTP, plus search, CSV and calendar export, and response-rate stats
-  \item Set up GitHub Actions CI to run backend tests and a production build on every push, and added a one-click demo with a sample board
+  \item Set up GitHub Actions CI to run tests and a production build on every push, and added a one-click demo; another job seeker now uses it to track her own applications
 \end{itemize}
 
 \section{Experience}

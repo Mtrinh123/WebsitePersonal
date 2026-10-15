@@ -103,6 +103,23 @@ nav a:hover {
   color: var(--ink);
 }
 
+nav div {
+  align-items: center;
+}
+
+nav a.nav-resume {
+  padding: 4px 12px;
+  border: 1px solid var(--hairline-strong);
+  border-radius: 8px;
+  background: var(--surface-1);
+  color: var(--ink);
+  font-weight: 500;
+}
+
+nav a.nav-resume:hover {
+  border-color: var(--primary);
+}
+
 footer {
   padding: 64px 0;
   border-top: 1px solid var(--hairline);
