@@ -54,8 +54,8 @@
         </p>
         <p>
           For my senior capstone, I helped move North Carolina's Early Math Placement Test from paper to an
-          online platform. Right now I'm building a job application tracker end to end. I'm looking for a team
-          where I can ship reliable features and keep learning from strong engineers.
+          online platform. I also built and deployed a job application tracker end to end, which you can try live
+          below. I'm looking for a team where I can ship reliable features and keep learning from strong engineers.
         </p>
       </div>
 
@@ -139,7 +139,8 @@
             <span>Google Cloud</span>
             <span>Docker</span>
             <span>Kubernetes</span>
-            <span>CI/CD</span>
+            <span>Vercel</span>
+            <span>CI/CD (GitHub Actions)</span>
             <span>Git</span>
           </div>
         </div>
@@ -168,19 +169,30 @@
         </article>
 
         <article class="card">
-          <h3>Job Application Tracker <small>In progress</small></h3>
+          <h3>Job Application Tracker <small class="live">Live</small></h3>
+          <a class="shot" href="https://job-application-tracker-tau-orcin.vercel.app" target="_blank" rel="noopener">
+            <img src="project/job-tracker.png" width="2880" height="1800" loading="lazy"
+              alt="The tracker's board with sample jobs in saved, applied, interview, offer and rejected columns, follow-ups due and response-rate stats">
+          </a>
           <p>
             Paste a job link and the company and role fill in, then drag applications across a pipeline board.
-            Built on a FastAPI REST API and PostgreSQL in Docker, with user accounts, hashed passwords,
-            backend tests, daily follow-up reminders by email, search and CSV export.
+            Built and deployed it end to end: Next.js on Vercel, a FastAPI REST API on Render and PostgreSQL on
+            Neon. Accounts use hashed passwords, required email confirmation and a lockout after 5 failed logins.
+            It sends branded confirmation and follow-up reminder emails, and has search, CSV and calendar export,
+            and response-rate stats. GitHub Actions runs the tests and a production build on every push.
           </p>
           <div class="tags">
             <span>Next.js</span>
             <span>FastAPI</span>
             <span>PostgreSQL</span>
-            <span>Docker</span>
+            <span>GitHub Actions</span>
+            <span>Vercel</span>
           </div>
-          <p class="links"><a href="https://github.com/Mtrinh123/JobApplicationTracker" target="_blank" rel="noopener">View on GitHub →</a></p>
+          <p class="links">
+            <a href="https://job-application-tracker-tau-orcin.vercel.app" target="_blank" rel="noopener">Try the live demo →</a>
+            <a href="https://github.com/Mtrinh123/JobApplicationTracker" target="_blank" rel="noopener">View on GitHub →</a>
+          </p>
+          <p class="note">One click on "Try the demo" opens a sample board, no sign-up. The free server can take up to a minute to wake up.</p>
         </article>
 
         <article class="card">
