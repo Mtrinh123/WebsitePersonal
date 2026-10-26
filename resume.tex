@@ -20,7 +20,10 @@
     \textit{#3} & \textit{#4} \\
   \end{tabularx}\vspace{-2pt}}
 
-\newcommand{\project}[2]{\textbf{#1} $|$ \textit{#2}\vspace{-2pt}}
+\newcommand{\project}[3]{%
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{#1} $|$ \textit{#2} & #3 \\
+  \end{tabularx}\vspace{-2pt}}
 
 \begin{document}
 
@@ -36,39 +39,39 @@
 
 \section{Summary}
 Software Engineering graduate (ECU, 2026) building full-stack web apps with React/Next.js and FastAPI/.NET.
-Helped take a state placement test online for NC colleges, and shipped a live job tracker with CI.
+Built the online version of a state math placement test for NC high schools, and shipped a live job tracker with CI.
 
 \section{Education}
 \entry{East Carolina University}{Aug 2022 -- May 2026}
       {B.S. Software Engineering, Concentration in Mobile/Web Development}{Greenville, NC}
 \begin{itemize}
-  \item Relevant coursework: Web Development, Database Systems, Cloud Computing
+  \item GPA: 3.4/4.0 $|$ Relevant coursework: Web Development, Database Systems, Cloud Computing
 \end{itemize}
 
 \section{Projects}
-\project{NCEMPT-3 -- Early Math Placement Test (Capstone)}{.NET, C\#, JavaScript, Google Cloud} \hfill Aug 2025 -- May 2026
+\project{NCEMPT-3 -- Early Math Placement Test (Capstone)}{.NET, C\#, JavaScript, GCP}{Aug 2025 -- May 2026}
 \begin{itemize}
-  \item Worked on a 5-person team to move NC EMPT (\href{https://ncempt.org}{ncempt.org}), a placement test that has served 859,000+ students, from paper to an online platform used by NC community colleges and UNC universities
-  \item Built proctor pages and routing so test administrators can manage students' tests during an exam
-  \item Built downloadable student and teacher score reports generated after each test
-  \item Set up the database for student, test and results data behind the .NET backend on Google Cloud
+  \item On a 5-person team, built the online testing platform to replace the paper exam for NC EMPT (\href{https://ncempt.org}{ncempt.org}), a state-sponsored math placement test that has served 859,000+ NC high school students over 28 years
+  \item Built the proctor dashboard where test administrators pause and resume an individual student's test by student ID, or pause and resume every active test at once during an emergency
+  \item Built downloadable PDF score reports for students and teachers, generated after each test, showing the student's score and their answer to each question
+  \item Set up the Cloud SQL (PostgreSQL) database environment on Google Cloud that stores student, test and results data for the .NET backend
 \end{itemize}
 \vspace{4pt}
 
-\project{Job Application Tracker -- \href{https://job-application-tracker-tau-orcin.vercel.app}{Live Demo} $|$ \href{https://github.com/Mtrinh123/JobApplicationTracker}{GitHub}}{Next.js, FastAPI, PostgreSQL, GitHub Actions}
+\project{Job Application Tracker -- \href{https://job-application-tracker-tau-orcin.vercel.app}{Live Demo} $|$ \href{https://github.com/Mtrinh123/JobApplicationTracker}{GitHub}}{Next.js, FastAPI, PostgreSQL, GitHub Actions}{Oct 2026}
 \begin{itemize}
-  \item Built and deployed a full-stack app (Next.js on Vercel, FastAPI on Render, PostgreSQL on Neon) where users paste a job link to auto-fill the company and role, then drag applications across a pipeline board
-  \item Secured accounts with hashed passwords, required email confirmation and a lockout after 5 failed logins, and blocked private network addresses in the link lookup
-  \item Built branded HTML confirmation and follow-up reminder emails over SMTP, plus search, CSV and calendar export, and response-rate stats
-  \item Set up GitHub Actions CI to run tests and a production build on every push, and added a one-click demo; another job seeker now uses it to track her own applications
+  \item Deployed a full-stack app (Next.js on Vercel, FastAPI on Render, PostgreSQL on Neon) with a 16-endpoint REST API. Users paste a job link to auto-fill the company and role
+  \item Secured logins with scrypt hashing, HttpOnly session cookies, email confirmation and a 5-attempt lockout, and blocked private IPs in link lookups (SSRF)
+  \item Added HTML reminder emails over SMTP, search, CSV and calendar export, and response-rate stats
+  \item Set up GitHub Actions CI to run tests and a production build on every push. Another job seeker now uses it
 \end{itemize}
 
 \section{Experience}
 \entry{Umiya}{Dec 2024 -- Present}
       {Server}{Raleigh, NC}
 \begin{itemize}
-  \item Train new staff and support other servers at an all-you-can-eat sushi and hotpot restaurant
-  \item Gave feedback on the design of the restaurant's website, drawing on my web development coursework
+  \item Handle 9 tables per busy weekend shift, including 3 large parties of 6--8 guests, at a high-volume all-you-can-eat sushi and hotpot restaurant
+  \item Trained 3 new servers and support teammates during peak hours
 \end{itemize}
 
 \section{Technical Skills}
